@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136386901-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136386901-1');
+</script>
+
   <meta charset ="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- site icon -->
   <link rel="shortcut icon" href="style/pics/ipsonicon2.png">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <!-- our css -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- jquery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <title>Vyom Malhotra</title>
 
 </head>
 
 <body>
 
-  <div class="top-container">
-
+  <div class="top-container"> 
     <!-- div which allows for video overlaying -->
     <div class="overlay">
       <!-- navbar bootstrap-->
@@ -29,40 +40,170 @@
             VYOM MALHOTRA
           </a>
           <span class="pages">
-            <a class="nav-items" href="#anchor">CONTACT</a>
+            <a class="nav-items" href="#contact">CONTACT</a>
           </span>
         </div>
       </nav>
     </div>
-
+    
     <!--center text in top-container -->
-    <div class="catchline"><u>THE ELEVATION OF MY JOURNEY</u></div>
-    <div class="secondary-text">There are two types of people in this world: followers and leaders. <br>The followers pursue a set pattern for success, leaders are innovators, they seek opportunities and take risks in order to lead people onto a new path. <br>
-      <br> I am a leader. I aspire to act as a driving force behind innovation and impact the advancement of humanity.
+    <div class="row secondary-text d-flex justify-content-center">
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class="col-sm">
+        <p>
+          <span class="typer" data-delay="150" data-words="Hello,Namaste,Bonjour,Hola,Guten tag,Shalom,Konnichiwa,Nǐ hǎo" data-colors="white"></span>
+          <span class="cursor" data-owner="first-typer"></span>
+        </p>
+      </div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+    </div>
+    <div class="row secondary-text d-flex justify-content-center"><p></p></div>
+    <div class="row secondary-text d-flex justify-content-center"><p></p></div>
+    <div class="row secondary-text d-flex justify-content-center"><p></p></div>
+    
+    <!--center text in top-container -->
+    <div class="row secondary-text d-flex justify-content-center">
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class="col-sm"><button onClick="document.getElementById('posts').scrollIntoView();" type="button" class="btn btn-dark">Posts</button></div>
+      <div class="col-sm"><button onClick="document.getElementById('about').scrollIntoView();" style="white-space: nowrap" type="button" class="btn btn-dark">About Me</button></div>
+      <div class="col-sm"><button onClick="document.getElementById('projects').scrollIntoView();" type="button" class="btn btn-dark">Projects</button></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
+      <div class ="d-none d-lg-block col-sm"></div>
     </div>
 
     <!-- video in background-->
-    <div id="video-container">
-      <video autoplay loop muted class="fillWidth">
-        <source src="style/pics/fly.mp4" type="video/mp4"/>
+    <div id="video-container" class="row">
+      <div class="d-none d-lg-block">
+        <video autoplay loop muted class="fillWidth">
+          <source src="style/pics/fly.mp4" type="video/mp4"/>
+      </div>
+      <div class="d-lg-none">
+        <img class="flyImage" src="style/pics/vertical.jpg">
+      </div>
+      </div>
     </div>
 
-    <!-- end of top-container -->
-    </div>
-
-    <div id="anchor" class="container-two">
-        <div class="tags">
-            <a href="https://github.com/vyommalhotra"> <img class="github" src="style/pics/GitHub_Logo.png"> </a>
-            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="vyommalhotra"><a class="LI-simple-link" href='https://ca.linkedin.com/in/vyommalhotra?trk=profile-badge'>Vyom Malhotra</a></div>
-            <a class="email" href="mailto:contact@vyommalhotra.com"> contact@vyommalhotra.com </a>
+    <div class="container-two" id="about">
+      <div class="container">
+        <div class="row align-items-center h-100">
+            <div class="col"></div>
+            <div class="d-none d-lg-block col-4 text-center about animated bounceInDown slow">
+                <img class="img-fluid" src="style/pics/rocks2.png">
+            </div>
+            <div class="d-none d-lg-block col-4 card text-center about animated bounceInDown slow">
+                About Me <br>
+                <p class="about-me">
+                    I am a Computer Engineering Student at the University of Waterloo. 
+                    In complete honesty, I don't really know anything about anything. 
+                    The more I learn as a student, the more intrigued I am by how little we actually know.
+                    I am deeply fascinated by philosophical questions regarding our nature of existence. 
+                    My constant seeking has brought me to practice quieting my thoughts, opening my heart and listening to the intuitive mind.
+                    In my free time, you can find me writing gibberish in my journal or having long discussions with my friends.
+                    I also work on some software projects for practice and fun.
+                </p>
+            </div>
+            <div class="d-lg-none col-10 card text-center about">
+                About Me <br>
+                <p class="about-me">
+                  I am a Computer Engineering Student at the University of Waterloo. 
+                  In complete honesty, I don't really know anything about anything. 
+                  The more I learn as a student, the more intrigued I am by how little we actually know.
+                  I am deeply fascinated by philosophical questions regarding our nature of existence. 
+                  My constant seeking has brought me to practice quieting my thoughts, opening my heart and listening to the intuitive mind.
+                  In my free time, you can find me writing gibberish in my journal or having long discussions with my friends.
+                  I also work on some software projects for practice and fun.
+                </p>
+            </div>
+            <div class="col"></div>
         </div>
+      </div>
     </div>
+
+    <div class="container-three" id="posts">
+        <div class="container">
+            <!---->
+            <header class="section-heading text-center">
+              <h2>Medium Posts</h2>
+            </header>
+            <!---->
+            <div class="section-content" id="blogContent">
+              <div class="row" id="jsonContent"></div>
+            </div>
+            <!-- /#blogContent-->
+            <div class="text-center" style="padding-bottom: 5%"><a class="btn btn-dark" id="loadBlogPosts" href="https://medium.com/@vyommalhotra">View All<span class="fa fa-angle-double-right"></span></a></div>
+        </div>
+          <!-- /.container-->
+    </div>
+
+    <div class="container-four" id="projects">
+      <div class="container" style="padding-top: 2%">
+        <div class="row">
+          <div class="d-none d-lg-block col"></div>
+          <div class="col-4">
+              <div class="github-card" data-github="vyommalhotra" data-width="375" data-height="318" data-theme="medium"></div>
+          </div>
+          <div class="d-none d-lg-block col"></div>
+        </div>
+        
+        <div class="row justify-content-md-center">
+          <div class="col"></div>
+          <div class="col">
+              <div class="github-card" data-github="vyommalhotra/personal-site" data-width="375" data-height="150" data-theme="default"></div>
+          </div>
+          <div class="col">
+              <div class="github-card" data-github="vyommalhotra/torrent_client" data-width="375" data-height="" data-theme="default"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col"></div>
+            <div class="col">
+                <div class="github-card" data-github="vyommalhotra/ServiceStack.Aws" data-width="375" data-height="" data-theme="default"></div>          
+              </div>
+            <div class="col">
+                <div class="github-card" data-github="vyommalhotra/newuniverse" data-width="375" data-height="150" data-theme="default"></div>
+              </div>
+            <div class="col"></div>
+          </div>
+    </div>
+
+    <div class="container-five" id="contact" style="margin-top: 2%;">
+        <header class="section-heading text-center">
+            <h2>Contact Me</h2>
+        </header>
+      <div class="container" style="margin-top: 2%;">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-lg-4 text-center" style="background-color:white;min-height: 30vh; margin:3%">
+          <a target="_blank" href="mailto:contact@vyommalhotra.com">Email: contact@vyommalhotra.com</a><br>
+          <div class="text-center" style="margin: 8%">
+           <a target="_blank" href="https://github.com/vyommalhotra"><i style="margin:2%" class="fab fa-git-square fa-3x"></i></a>
+           <a target="_blank" href="https://www.linkedin.com/in/vyommalhotra/"><i style="margin:2%" class="fab fa-linkedin fa-3x"></i></a>
+           <a target="_blank" href="https://medium.com/@vyommalhotra"><i style="margin:2%" class="fab fa-medium fa-3x"></i></a>
+           <a target="_blank" href="https://www.facebook.com/vyom14"><i style="margin:2%" class="fab fa-facebook-square fa-3x"></i></a>
+          </div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
     <!--our js-->
     <script type="text/javascript" src="scripts/home.js"></script>
     <!-- Bootstrap js, jquery, tether -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="scripts/widget.js"></script>
+    <script src="scripts/typer.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 
   </html>
