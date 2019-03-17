@@ -1,2 +1,2 @@
 # personal-site
-personal website [vyommalhotra.com](vyommalhotra.com)
+personal website [vyommalhotra.com](http://vyommalhotra.com)
