@@ -237,4 +237,10 @@ a:hover
    cursor:pointer;  
 }
 
+.parallax
+{
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
 /* typing slider */
