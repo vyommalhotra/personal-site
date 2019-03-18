@@ -11,7 +11,7 @@ $(function () {
             $.each(response.items, function (k, item) {
                 var visibleSm;
                 
-                if(k < 3){
+                if(k < 5){
                 visibleSm = '';
                 } 
                 else {
@@ -41,7 +41,7 @@ $(function () {
                 
                 output += '<p>' + trimmedString + '...</p>';
                 output += '</div></div></div>';
-                return k < 3;
+                return k < 5;
             });
             $content.html(output);
         }
