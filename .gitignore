@@ -6,6 +6,6 @@
 Claude outputs/
 
 # original full-size source images (site uses optimized copies in assets/)
-films/
-photography/
-about/
+/films/
+/photography/
+/about/
