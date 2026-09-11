@@ -233,27 +233,27 @@
   
 <section class="photo-group">
   <div class="caption-line"><span class="title">Berkeley</span></div>
-  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Berkeley" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860004.jpg"><img class="zoom" data-gallery="photo" data-caption="Berkeley" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860007.jpg"><img class="zoom" data-gallery="photo" data-caption="Berkeley" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860008.jpg"></div>
+  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Berkeley" data-full="assets/photography/berkeley__000018860004.jpg" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860004_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Berkeley" data-full="assets/photography/berkeley__000018860007.jpg" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860007_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Berkeley" data-full="assets/photography/berkeley__000018860008.jpg" loading="lazy" alt="Berkeley" src="assets/photography/berkeley__000018860008_thumb.jpg"></div>
 </section>
 
 <section class="photo-group">
   <div class="caption-line"><span class="title">Mexico City</span></div>
-  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Mexico City" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300006.jpg"><img class="zoom" data-gallery="photo" data-caption="Mexico City" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300014.jpg"><img class="zoom" data-gallery="photo" data-caption="Mexico City" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300027.jpg"></div>
+  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Mexico City" data-full="assets/photography/mexico-city__000033300006.jpg" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300006_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Mexico City" data-full="assets/photography/mexico-city__000033300014.jpg" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300014_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Mexico City" data-full="assets/photography/mexico-city__000033300027.jpg" loading="lazy" alt="Mexico City" src="assets/photography/mexico-city__000033300027_thumb.jpg"></div>
 </section>
 
 <section class="photo-group">
   <div class="caption-line"><span class="title">Hawaii</span></div>
-  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Hawaii" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690011.jpg"><img class="zoom" data-gallery="photo" data-caption="Hawaii" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690012.jpg"><img class="zoom" data-gallery="photo" data-caption="Hawaii" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690019.jpg"></div>
+  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Hawaii" data-full="assets/photography/hawaii__000886690011.jpg" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690011_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Hawaii" data-full="assets/photography/hawaii__000886690012.jpg" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690012_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Hawaii" data-full="assets/photography/hawaii__000886690019.jpg" loading="lazy" alt="Hawaii" src="assets/photography/hawaii__000886690019_thumb.jpg"></div>
 </section>
 
 <section class="photo-group">
   <div class="caption-line"><span class="title">San Diego</span></div>
-  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="San Diego" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240022.jpg"><img class="zoom" data-gallery="photo" data-caption="San Diego" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240029.jpg"><img class="zoom" data-gallery="photo" data-caption="San Diego" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240030.jpg"></div>
+  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="San Diego" data-full="assets/photography/san-deigo__000079240022.jpg" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240022_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="San Diego" data-full="assets/photography/san-deigo__000079240029.jpg" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240029_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="San Diego" data-full="assets/photography/san-deigo__000079240030.jpg" loading="lazy" alt="San Diego" src="assets/photography/san-deigo__000079240030_thumb.jpg"></div>
 </section>
 
 <section class="photo-group">
   <div class="caption-line"><span class="title">Florida</span></div>
-  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Florida" loading="lazy" alt="Florida" src="assets/photography/florida__000049860006.jpg"><img class="zoom" data-gallery="photo" data-caption="Florida" loading="lazy" alt="Florida" src="assets/photography/florida__000049860008.jpg"><img class="zoom" data-gallery="photo" data-caption="Florida" loading="lazy" alt="Florida" src="assets/photography/florida__000049860036.jpg"></div>
+  <div class="trio"><img class="zoom" data-gallery="photo" data-caption="Florida" data-full="assets/photography/florida__000049860006.jpg" loading="lazy" alt="Florida" src="assets/photography/florida__000049860006_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Florida" data-full="assets/photography/florida__000049860008.jpg" loading="lazy" alt="Florida" src="assets/photography/florida__000049860008_thumb.jpg"><img class="zoom" data-gallery="photo" data-caption="Florida" data-full="assets/photography/florida__000049860036.jpg" loading="lazy" alt="Florida" src="assets/photography/florida__000049860036_thumb.jpg"></div>
 </section>
 </section>
 
@@ -297,7 +297,7 @@
   var lb=document.getElementById('lb'), lbImg=lb.querySelector('img'), lbCount=lb.querySelector('.count'), lbCap=lb.querySelector('.lb-cap');
   var gal=[], gi=0;
   function collect(name){ return Array.prototype.slice.call(document.querySelectorAll('img.zoom[data-gallery="'+name+'"]')); }
-  function lbShow(){ lbImg.src=gal[gi].src; lbCap.textContent=gal[gi].dataset.caption||''; lbCount.textContent=(gi+1)+' / '+gal.length; }
+  function lbShow(){ lbImg.src=gal[gi].dataset.full || gal[gi].src; lbCap.textContent=gal[gi].dataset.caption||''; lbCount.textContent=(gi+1)+' / '+gal.length; }
   function lbOpen(el){ gal=collect(el.dataset.gallery); gi=gal.indexOf(el); lbShow(); lb.classList.add('open'); body.classList.add('lb-open'); }
   function lbClose(){ lb.classList.remove('open'); body.classList.remove('lb-open'); }
   function lbStep(d){ gi=(gi+d+gal.length)%gal.length; lbShow(); }
