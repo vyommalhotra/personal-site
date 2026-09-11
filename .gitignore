@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# transfer bundles / scratch
+*.zip
+Claude outputs/
+
+# original full-size source images (site uses optimized copies in assets/)
+films/
+photography/
+about/
